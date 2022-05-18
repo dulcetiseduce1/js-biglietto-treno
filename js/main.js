@@ -1,6 +1,14 @@
 //Chiediamo i dati
-const inputKm = prompt("Quanti chilometri dovrai percorrere?")
-const inputAge = prompt("Inserisci la tua età")
+let inputKm
+do {
+    inputKm = prompt("Quanti chilometri dovrai percorrere?")
+} while (isNaN(inputKm))
+
+let inputAge
+do {
+    inputAge = prompt("Inserisci la tua età")
+} while (isNaN(inputAge))
+
 
 //Logica sconto
 if(inputAge > 65){ 
